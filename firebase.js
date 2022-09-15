@@ -14,10 +14,9 @@ const firebaseConfig = {
     appId: "1:648214093520:web:6ea02f583cd080916648d"
 }  
 
-const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-firebase.app(initializeApp);
+firebase.initializeApp(firebaseConfig);
 
 firebase.firestore().settings({
     ignoreUndefinedProperties: true,
